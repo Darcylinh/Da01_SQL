@@ -13,7 +13,7 @@ select city, state from station
 ___CÂU 4
 select distinct city
 from station
-where city like 'A%' or 'E%' or 'I%' or 'O%' or 'U%' 
+where city like 'A%' or city like 'E%' or city like 'I%' or city like 'O%' or city like'U%' 
 
 ___CÂU 5
 SELECT distinct CITY 
@@ -60,7 +60,7 @@ order by author_id
 ___câu 13
 SELECT part
 from parts_assembly
-where finish_date ='null' 
+where finish_date is null 
   
 
 ___câu 14
@@ -70,4 +70,4 @@ where year_salary <= 30000 or year_salary >=70000
 ___câu 15
 select advertising_channel
 from uber_advertising
-where money_spend >100000 in year(2019)
+where money_spend >100000 year in (2019)
