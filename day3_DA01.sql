@@ -42,7 +42,7 @@ and recyclable='Y'
 ___câu 10
 select name from customer
 where referee_id !='2' 
-or referee_id ='null'
+or referee_id is null
 
 ___câu 11
 select name, population, area 
